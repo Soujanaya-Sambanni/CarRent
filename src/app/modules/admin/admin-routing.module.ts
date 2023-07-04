@@ -12,9 +12,9 @@ const routes: Routes = [
     component: AdminDashboardComponent,
     children: [
       { path: 'home', component: HomeComponent },
-      { path: 'about', component: ForYouComponent },
-      { path: 'services', component: GetCarComponent },
-      { path: 'contact', component: PolicyComponent },
+      { path: 'for-you', component: ForYouComponent },
+      { path: 'get-car', component: GetCarComponent },
+      { path: 'policy', component: PolicyComponent },
       { path: '', redirectTo: '/admin/home', pathMatch: 'full' },
     ],
   },
