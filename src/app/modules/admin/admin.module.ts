@@ -8,6 +8,7 @@ import { ForYouComponent } from './components/for-you/for-you.component';
 import { GetCarComponent } from './components/get-car/get-car.component';
 import { PolicyComponent } from './components/policy/policy.component';
 import { HomeComponent } from './components/home/home.component';
+import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { HomeComponent } from './components/home/home.component';
     ForYouComponent,
     GetCarComponent,
     PolicyComponent,
-    HomeComponent
+    HomeComponent,
+    AdminDashboardComponent
   ],
   imports: [
     CommonModule,
