@@ -1,0 +1,24 @@
+<!-- partial:index.partial.html -->
+<div id="bg">
+    <a class="navbar-brand" href="#" style="font-size: 2em; font-weight: bold; margin-left: 25px; margin-top: 50px;"><i class="bi bi-car-front-fill me-2"></i>Go<span>Car</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<form [formGroup]="loginform">
+  <div class="form-field">
+    <input type="email" placeholder="Email / Username" formControlName="email" required/>
+  </div>
+  
+  <div class="form-field">
+    <input type="password" placeholder="Password" formControlName="password" required/> 
+  </div>
+  
+  <div class="form-field">
+    <button class="btn" type="submit" (click)="onSubmit()">Log in</button>
+  </div>
+</form>
+<!-- partial -->
+  

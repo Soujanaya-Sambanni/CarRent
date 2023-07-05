@@ -1,0 +1,54 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  ol {
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  
+  /* Specific Styles for Car Rental Policy */
+  .policy-container {
+    max-width: 100%;
+    /* margin: 0 auto; */
+    margin-bottom: 70px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .policy-container h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  
+  .policy-container h2 {
+    font-size: 1.4em;
+  }
+  
+  .policy-container ol {
+    margin-left: 30px;
+  }
+  
+  .policy-container p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Optional: Add more styles to customize the appearance further */
+  
