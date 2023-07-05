@@ -1,1 +1,118 @@
-<p>get-car works!</p>
+<div class="row">
+  <div class="col-sm-2">
+  <div class="sidebar">
+    <h2>LOCATIONS</h2>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="list/Bengaluru Urban">Bengaluru Urban</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="list/Jayanagar">Jayanagar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="list/Basavanagudi">Basavanagudi</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="list/Indiranagar">Indiranagar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="list/Koramangala">Koramangala</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="list/Banashankari">Banashankari
+        </a>
+      </li>
+    </ul>
+    <div class="d-flex">
+      <button class="btn btn-success" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-file-earmark-plus-fill"> ADD NEW CAR</i></button>&nbsp;&nbsp;
+      <!--<div class="search-student" >
+          <input type="search" class="form-control input-lg" name="searchstudent" placeholder="search student"
+            (input)="searchstudent($event)">
+        </div>-->
+        
+    </div>
+  </div>
+  </div><!--end of first colmn-->
+  <div class="col-sm-10">
+    <br>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div style="background-color: black;" class="modal-header">
+          <h5 style="color: white;" class="modal-title" id="exampleModalLabel">ADD CAR</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body nb-2">
+          <form [formGroup]="carform">
+            <div class="form-group"  >
+              <label for="example">Model</label>
+              <input type="text" class="form-control" formControlName="model" placeholder="Enter Car Model">
+              <span class="text-danger" *ngIf="carform.controls['model'].dirty && carform.hasError('required','model')">*model name is required</span>
+            </div>
+            <div class="form-group">
+                <label for="example">Location </label><br>
+                <select id="country" name="cname" class="form-control" formControlName="cname">
+                    <option >Bengaluru Urban</option>
+                    <option >Jayanagar</option>
+                    <option >Basavanagudi</option>
+                    <option >Indiranagar</option>
+                    <option >Koramangala</option> 
+                    <option >Banashankari</option>
+                   </select>
+                <span class="text-danger" *ngIf="carform.controls['cname'].dirty && carform.hasError('required','cname')">*Catagarious is required</span>
+            </div>
+            <div class="form-group"  >
+              <label for="example">Price</label>
+              <input type="text" class="form-control" formControlName="year" placeholder="Enter price">
+              <span class="text-danger" *ngIf="carform.controls['year'].dirty && carform.hasError('required','year')">*price is required</span>
+            </div>
+            <div class="form-group"  >
+              <label for="example">Img url</label>
+              <input type="url" class="form-control" formControlName="url" placeholder="Enter url">
+              <span class="text-danger" *ngIf="carform.controls['url'].dirty && carform.hasError('required','url')">*img is required</span>
+            </div>
+          </form>
+        </div>
+        <div style="background-color: black;" class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+          <button (click)="add(this.carform.value)" type="button" class="btn btn-primary">ADD</button>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="card-list">
+      <div class="card" *ngFor="let car of cardata">
+        <img [src]="car.url" alt="Car Image" />
+        <div class="card-details">
+          <h5 style="color: brown;">{{ car.model }} </h5>
+          
+          <p style="color: blue;">Price: {{ car.year }}</p>
+          <button  type="button"  class="btn btn-success" routerLink="booknow"  style="font-size: 15px;color: black;" routerLink="../booknow">BOOK THE CAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+    
+  </div><!--end of row-->
+  
+
+
+  
+
+
+
+  <!-- Page content -->
+  
+
+ 

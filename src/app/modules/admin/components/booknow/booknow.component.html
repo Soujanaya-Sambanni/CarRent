@@ -1,0 +1,93 @@
+<br>
+<div class="row">
+    <div class="col-sm-4 custom-col1 ">
+        <h4 style="color: blueviolet; text-align: center;">BOOKING FORM</h4>
+        <div class="form-box">
+        <form [formGroup]="bookform" class="row g-3" >
+        <div class="form-group">
+          <label for="example"> Name</label>
+          <input type="text" class="form-control" formControlName="name" >
+          <span class="text-danger" *ngIf="bookform.controls['name'].dirty && bookform.hasError('required','name')">* name is required</span>
+        </div>
+        <div class="form-group col-md-6 mb-2" >
+            <label for="example">Enter Phone Number</label>
+            <input type="number" class="form-control" formControlName="number" >
+            <span class="text-danger" *ngIf="bookform.controls['number'].dirty && bookform.hasError('required','number')">*phone number is required</span>
+          </div>
+        <div class="form-group col-md-6 mb-2 ">
+            <label for="example"> Car Name</label>
+            <select id="country" name="carname" class="form-control" formControlName="carname">
+                <option *ngFor="let car of cardata" [value]="car.model">{{car.model}}</option>
+               
+               </select>
+            <span class="text-danger" *ngIf="bookform.controls['carname'].dirty && bookform.hasError('required','carname')">* car name is required</span>
+          </div>
+        <div class="form-group col-md-6 mb-2">
+          <label for="example"> Date</label>
+          <input type="date" class="form-control" formControlName="date" >
+          <span class="text-danger" *ngIf="bookform.controls['date'].dirty && bookform.hasError('required','date')">*Date is required</span>
+        </div>
+        <div class="form-group col-md-6 mb-2">
+            <label for="example">Location</label>
+            <select id="country" name="lname" class="form-control" formControlName="lname">
+                <option >Bengaluru Urban</option>
+                <option >Jayanagar</option>
+                <option >Basavanagudi</option>
+                <option >Indiranagar</option>
+                <option >Koramangala</option> 
+                <option >Banashankari</option>
+               </select>
+            <span class="text-danger" *ngIf="bookform.controls['lname'].dirty && bookform.hasError('required','lname')">* Location is required</span>
+          </div>
+        <div class="form-group col-md-6 mb-2">
+          <label for="example">Pickup Time</label>
+          <input type="time" class="form-control" formControlName="ptime" >
+          <span class="text-danger" *ngIf="bookform.controls['ptime'].dirty && bookform.hasError('required','ptime')">*pickup time  is required</span>
+        </div>
+        <div class="form-group col-md-6 mb-2" >
+            <label for="example">Return Time</label>
+            <input type="time" class="form-control" formControlName="rtime" >
+            <span class="text-danger" *ngIf="bookform.controls['rtime'].dirty && bookform.hasError('required','rtime')">*return time  is required</span>
+          </div>
+      </form>
+      <br>
+        <button (click)="add(this.bookform.value)" type="button" class="btn btn-primary" [disabled]="this.bookform.invalid">BOOK</button>
+    </div>
+    </div>
+    <div class="col-sm-8 custom-col2">
+        <h4 style="color: blueviolet; text-align: center;">BOOKING DETAILS</h4>
+        <div class="table-box">
+        <div class="container-fluid mt-3">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+            
+                  <th scope="col"> Name</th>
+                  <th scope="col"> Phone Number</th>
+                  <th scope="col">Car Name</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Pickup Time</th>
+                  <th scope="col">Return Time</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of data">
+                  <td>{{item.name}}</td>
+                  <td>{{item.number}}</td>
+                  <td>{{item.carname}}</td>
+                  <td>{{item.date}}</td>
+                  <td>{{item.lname}}</td>
+                  <td>{{item.ptime}}</td>
+                  <td>{{item.rtime}}</td>
+                  
+                  <td><button class="btn btn-danger" (click)="deletebook(item.id)">Delete</button></td>
+                  
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+</div>

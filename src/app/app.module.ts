@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
@@ -17,9 +17,13 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+
+    FormsModule,
     ReactiveFormsModule,
-    FormsModule
+    HttpClientModule
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,19 +1,119 @@
 {
-  "posts": [
+  "list": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "BMW Z4",
+      "text": "Petrol, 2 seater",
+      "rating": "4.2 stars",
+      "imgSrc":"https://media.zigcdn.com/media/model/2023/May/z4-8_600x400.jpg"
+    },
+    {
+      "name": "Mahindra Thar",
+      "text": "Diesel, 4 seater",
+      "rating": "4.8 stars",
+      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Mahindra/Thar/9532/1673847269565/222_everest-white_ffffff.jpg?tr=w-290,h-205"
+    },
+    {
+      "name": "Kia Sonet ",
+      "text": "Diesel, 7 seater",
+      "rating": "4.5 stars",
+      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Kia/Sonet/7256/1678438878722/225_Aurora-Black-Pearl_242427.jpg?tr=w-290,h-205"
+    },
+    {
+      "name": "Mahindra Scorpio",
+      "text": "Diesel, 7 seater",
+      "rating": "4.2 stars",
+      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Mahindra/Scorpio-N/9174/1656388530514/227_GrandCanyon_571e14.jpg?tr=w-290,h-205"
+    },
+    {
+      "name": "Hyundai Creta",
+      "text": "Diesel, 5 seater",
+      "rating": "4.75 stars",
+      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Hyundai/Creta/7695/1651738469758/224_Polar-white-with-phantom-black-roof_e5e9ec.jpg?tr=w-290,h-205"
+    },  {
+      "name": "Tata Nexon",
+      "text": "Diesel, 5 seater",
+      "rating": "4.8 stars",
+      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Tata/Nexon/9977/1683096260828/226_foliage-green_657362.jpg?tr=w-290,h-205"
+    }, 
+     {
+      "name": "Maruti FRONX",
+      "text": "Petrol, 5 seater",
+      "rating": "4.75 stars",
+      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Hyundai/Creta/7695/1651738469758/224_Polar-white-with-phantom-black-roof_e5e9ec.jpg?tr=w-290,h-205"
+    },
+    
+    {
+      "name": "Maruti Jimny",
+      "text": "Petrol, 4 seater",
+      "rating": "4.2 stars",
+      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Maruti/Jimny/6182/1673858472875/221_Kinetic-Yellow-With-Bluish-Black-Roof_a9b04c.jpg?tr=w-290,h-205"
     }
   ],
-  "comments": [
+  "car": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "model": "Hyundai Grand i10 NIOS",
+      "cname": "Indiranagar",
+      "year": "Rs 450/hr",
+      "url": "https://images.ctfassets.net/uwf0n1j71a7j/5NMva6bkwhfnI0uuoe0i5g/ffef5c966eef1dd7adf83803e8d283f4/hyundai-grand-i10-nios-car-insurance.svg?&w=384&q=75"
+    },
+    {
+      "id": 2,
+      "model": "Maruti Suzuki Wagon R",
+      "cname": "Indiranagar",
+      "year": "Rs 260/hr",
+      "url": "https://images.ctfassets.net/uwf0n1j71a7j/4zdp8wxBbch39CgoS9aECk/202f0293bada70b1276a969b599566ac/car-insurance-maruti-suzuki-wagon-r.svg?&w=384&q=75"
+    },
+    {
+      "id": 3,
+      "model": "Renault Kwid",
+      "cname": "Indiranagar",
+      "year": "Rs 500/hr",
+      "url": "https://images.ctfassets.net/uwf0n1j71a7j/3fvWstcG2UCeUw7RWmtVKu/39fe4b16fe44a84b4de1a92456be8b51/renault-kwid-car-insurance.svg?&w=384&q=75"
+    },
+    {
+      "id": 5,
+      "model": "Mahindra Scorpio",
+      "cname": "Jayanagar",
+      "year": "Rs 800/hr",
+      "url": "https://imgd.aeplcdn.com/370x208/n/cw/ec/128413/scorpio-exterior-right-front-three-quarter-46.jpeg?isig=0&q=75"
+    },
+    {
+      "id": 6,
+      "model": "Mahindra Thar",
+      "cname": "Koramangala",
+      "year": "RS 450/hr",
+      "url": "https://imgd.aeplcdn.com/370x208/n/cw/ec/40087/thar-exterior-right-front-three-quarter-11.jpeg?q=75"
+    },
+    {
+      "id": 7,
+      "model": "Renult Kwid",
+      "cname": "Indiranagar",
+      "year": "Rs 900/hr",
+      "url": "https://imgd.aeplcdn.com/227x128/n/cw/ec/141125/kwid-exterior-right-front-three-quarter.png?isig=0&q=75"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "booking": [
+    {
+      "id": 1,
+      "name": "Amruta D",
+      "number": 7412589635,
+      "carname": "Mahindra Thar",
+      "date": "2023-07-01",
+      "lname": "Indiranagar",
+      "ptime": "21:28",
+      "rtime": "19:26"
+    },
+    {
+      "id": 2,
+      "name": "Soujanya S",
+      "number": 8523697412,
+      "carname": "Maruti Suzuki Wagon R",
+      "date": "2023-07-09",
+      "lname": "Basavanagudi",
+      "ptime": "02:25",
+      "rtime": "05:23"
+    }
+  ]
+
 }
