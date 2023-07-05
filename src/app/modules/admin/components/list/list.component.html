@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="card-list">
+      <div class="card" *ngFor="let car of cardata">
+        <img [src]="car.url" alt="Car Image" />
+        <div class="card-details">
+          <h5 style="color: brown;">{{ car.model }} </h5>
+          
+          <p style="color: blue;"> {{ car.year }}</p>
+          <button  type="button"  class="btn btn-success"  style="font-size: 15px;color: black;">BOOK THE CAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
