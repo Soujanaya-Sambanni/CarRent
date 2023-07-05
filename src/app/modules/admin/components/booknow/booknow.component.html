@@ -9,12 +9,12 @@
           <input type="text" class="form-control" formControlName="name" >
           <span class="text-danger" *ngIf="bookform.controls['name'].dirty && bookform.hasError('required','name')">* name is required</span>
         </div>
-        <div class="form-group" >
+        <div class="form-group col-md-6 mb-2" >
             <label for="example">Enter Phone Number</label>
             <input type="number" class="form-control" formControlName="number" >
             <span class="text-danger" *ngIf="bookform.controls['number'].dirty && bookform.hasError('required','number')">*phone number is required</span>
           </div>
-        <div class="form-group">
+        <div class="form-group col-md-6 mb-2 ">
             <label for="example"> Car Name</label>
             <select id="country" name="carname" class="form-control" formControlName="carname">
                 <option *ngFor="let car of cardata" [value]="car.model">{{car.model}}</option>
