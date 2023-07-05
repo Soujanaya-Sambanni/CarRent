@@ -1,15 +1,9 @@
-
-<div class="title" style="font-size: 40px; color: brown;text-align: center;">
-    BOOK A CAR
-</div>
-<hr>
-
+<br>
 <div class="row">
-    <div class="col-sm-4 custom-col1">
+    <div class="col-sm-4 custom-col1 ">
         <h4 style="color: blueviolet; text-align: center;">BOOKING FORM</h4>
         <div class="form-box">
-    
-        <form [formGroup]="bookform" >
+        <form [formGroup]="bookform" class="row g-3" >
         <div class="form-group">
           <label for="example"> Name</label>
           <input type="text" class="form-control" formControlName="name" >
@@ -28,12 +22,12 @@
                </select>
             <span class="text-danger" *ngIf="bookform.controls['carname'].dirty && bookform.hasError('required','carname')">* car name is required</span>
           </div>
-        <div class="form-group">
+        <div class="form-group col-md-6 mb-2">
           <label for="example"> Date</label>
           <input type="date" class="form-control" formControlName="date" >
           <span class="text-danger" *ngIf="bookform.controls['date'].dirty && bookform.hasError('required','date')">*Date is required</span>
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-6 mb-2">
             <label for="example">Location</label>
             <select id="country" name="lname" class="form-control" formControlName="lname">
                 <option >Bengaluru Urban</option>
@@ -45,19 +39,19 @@
                </select>
             <span class="text-danger" *ngIf="bookform.controls['lname'].dirty && bookform.hasError('required','lname')">* Location is required</span>
           </div>
-        <div class="form-group">
+        <div class="form-group col-md-6 mb-2">
           <label for="example">Pickup Time</label>
           <input type="time" class="form-control" formControlName="ptime" >
           <span class="text-danger" *ngIf="bookform.controls['ptime'].dirty && bookform.hasError('required','ptime')">*pickup time  is required</span>
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-6 mb-2" >
             <label for="example">Return Time</label>
             <input type="time" class="form-control" formControlName="rtime" >
             <span class="text-danger" *ngIf="bookform.controls['rtime'].dirty && bookform.hasError('required','rtime')">*return time  is required</span>
           </div>
       </form>
       <br>
-        <button (click)="add(this.bookform.value)" type="button" class="btn btn-secondary" [disabled]="this.bookform.invalid">BOOK</button>
+        <button (click)="add(this.bookform.value)" type="button" class="btn btn-primary" [disabled]="this.bookform.invalid">BOOK</button>
     </div>
     </div>
     <div class="col-sm-8 custom-col2">
