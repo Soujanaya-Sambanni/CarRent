@@ -15,6 +15,8 @@ const routes: Routes = [
       { path: 'for-you', component: ForYouComponent },
       { path: 'get-car', component: GetCarComponent },
       { path: 'policy', component: PolicyComponent },
+    //  {path:'booknow',component:BooknowComponent},
+    //   {path:'list/:car',component:ListComponent},
       { path: '', redirectTo: '/admin/home', pathMatch: 'full' },
     ],
   },
