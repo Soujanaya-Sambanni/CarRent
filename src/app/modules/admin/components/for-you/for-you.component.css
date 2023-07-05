@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
   
   /* .card {
     width: 300px;
@@ -8,12 +8,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   } */
   
+  .container{
+    margin-bottom: 60px;
+  }
 
   .card {
     margin-top: 10px;
     margin-bottom: 70px;
     width: 300px;
     height: 300px;
+    box-shadow: 1px 1px 10px grey;
   }
   
   .card-img-top {

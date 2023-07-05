@@ -19,6 +19,7 @@
 
 }
 
+
 .content a{
     text-decoration: none;
     display: inline-block;
@@ -28,8 +29,15 @@
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
-
+    transition: all 0.4s ease; 
 }
+
+.content a:hover{
+    /* color: black;
+    border: 2px solid black; */
+    transform: scale(1.1);
+}
+
 
 .back-video{
     position: absolute;

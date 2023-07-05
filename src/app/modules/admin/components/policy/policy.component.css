@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@500&display=swap');
+
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
@@ -15,11 +17,13 @@ body {
   
   p {
     margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
   }
   
   ol {
     margin-bottom: 20px;
     margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
   }
   
   /* Specific Styles for Car Rental Policy */
@@ -28,18 +32,20 @@ body {
     /* margin: 0 auto; */
     margin-bottom: 70px;
     padding: 20px;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .policy-container h1 {
-    font-size: 1.8em;
+    font-size: 38px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
   }
   
   .policy-container h2 {
     font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
   }
   
   .policy-container ol {

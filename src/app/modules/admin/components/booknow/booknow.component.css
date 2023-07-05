@@ -1,12 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&family=Roboto:wght@500&display=swap');
+
 .form-box{
     width:400px;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding:10px;
-    background-color:lightgray;
+    /* background-color:whitesmoke; */
+    box-shadow: 1px 1px 10px #28282b;
+    border-radius: 5px;
+    /* height: 430px; */
 }
 th{
-    background-color: black;
+    background-color: #28282b;
     color:white;
 }
+
+.row{
+    margin-right: 0;
+    /* margin-bottom: 50px; */
+   
+}
+
+#container{
+    margin-bottom: 90px;
+}
+
+.formbtn{
+    background-color: #28282b;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    transition: all 0.4s;
+}
+
+.formbtn:hover{
+    transform: scale(1.1);
+}
+
+label{
+    font-family: 'Open Sans', sans-serif;
+}
+
 

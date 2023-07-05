@@ -10,6 +10,7 @@ export const authGuard: CanActivateFn = (route: ActivatedRouteSnapshot, state: R
   const auth: AuthService = new AuthService(router); // Provide Router instance to AuthService constructor
 
   if (!auth.isLoggedIn()) {
+    // if not logged in
     router.navigate(['/login']);
     return false;
   }
