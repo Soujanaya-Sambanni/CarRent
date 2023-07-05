@@ -5,6 +5,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ForYouComponent } from './components/for-you/for-you.component';
 import { GetCarComponent } from './components/get-car/get-car.component';
 import { PolicyComponent } from './components/policy/policy.component';
+import { ListComponent } from './components/list/list.component';
+import { BooknowComponent } from './components/booknow/booknow.component';
 
 const routes: Routes = [
   {
@@ -14,6 +16,8 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'for-you', component: ForYouComponent },
       { path: 'get-car', component: GetCarComponent },
+      {path:'booknow',component:BooknowComponent},
+       {path:'list/:car',component:ListComponent},
       { path: 'policy', component: PolicyComponent },
       { path: '', redirectTo: '/admin/home', pathMatch: 'full' },
     ],

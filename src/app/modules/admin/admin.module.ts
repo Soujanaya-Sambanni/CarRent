@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import{FormsModule} from '@angular/forms';
+import{ReactiveFormsModule} from'@angular/forms';
 
 import { AdminRoutingModule } from './admin-routing.module';
 import { HeaderComponent } from './components/header/header.component';
@@ -9,6 +11,8 @@ import { GetCarComponent } from './components/get-car/get-car.component';
 import { PolicyComponent } from './components/policy/policy.component';
 import { HomeComponent } from './components/home/home.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
+import { ListComponent } from './components/list/list.component';
+import { BooknowComponent } from './components/booknow/booknow.component';
 
 
 @NgModule({
@@ -19,11 +23,15 @@ import { AdminDashboardComponent } from './components/admin-dashboard/admin-dash
     GetCarComponent,
     PolicyComponent,
     HomeComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    ListComponent,
+    BooknowComponent
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AdminModule { }
