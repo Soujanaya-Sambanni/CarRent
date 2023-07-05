@@ -13,6 +13,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
 import { ListComponent } from './components/list/list.component';
 import { BooknowComponent } from './components/booknow/booknow.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -30,8 +32,14 @@ import { BooknowComponent } from './components/booknow/booknow.component';
   imports: [
     CommonModule,
     AdminRoutingModule,
+
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
+
   ]
 })
 export class AdminModule { }

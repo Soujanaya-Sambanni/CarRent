@@ -19,6 +19,8 @@ const routes: Routes = [
       {path:'booknow',component:BooknowComponent},
        {path:'list/:car',component:ListComponent},
       { path: 'policy', component: PolicyComponent },
+    //  {path:'booknow',component:BooknowComponent},
+    //   {path:'list/:car',component:ListComponent},
       { path: '', redirectTo: '/admin/home', pathMatch: 'full' },
     ],
   },

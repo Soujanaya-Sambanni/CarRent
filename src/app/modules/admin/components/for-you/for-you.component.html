@@ -1,1 +1,24 @@
-<p>for-you works!</p>
+<!-- <div class="search-Books" style="margin-top: 2em; padding-left: 2em ;">
+    <input type="search"  placeholder="search Books"
+        >
+        <button type="send">Search</button>
+</div>
+
+ -->
+
+
+<div class="container">
+    <h2 style="text-align: center; margin-top: 10px;">List Of Cars</h2>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let item of data">
+            <div class="card">
+                <img src="{{item.imgSrc}}" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.name}}</h5>
+                    <p class="card-text">{{item.text}}.</p>
+                    <p ><i class="bi bi-star-fill me-1"style="color: gold;"></i>{{item.rating}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
