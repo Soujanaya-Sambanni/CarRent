@@ -4,49 +4,49 @@
       "name": "BMW Z4",
       "text": "Petrol, 2 seater",
       "rating": "4.2 stars",
-      "imgSrc":"https://media.zigcdn.com/media/model/2023/May/z4-8_600x400.jpg"
+      "imgSrc": "https://media.zigcdn.com/media/model/2023/May/z4-8_600x400.jpg"
     },
     {
       "name": "Mahindra Thar",
       "text": "Diesel, 4 seater",
       "rating": "4.8 stars",
-      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Mahindra/Thar/9532/1673847269565/222_everest-white_ffffff.jpg?tr=w-290,h-205"
+      "imgSrc": "https://stimg.cardekho.com/images/car-images/large/Mahindra/Thar/9532/1673847269565/222_everest-white_ffffff.jpg?tr=w-290,h-205"
     },
     {
       "name": "Kia Sonet ",
       "text": "Diesel, 7 seater",
       "rating": "4.5 stars",
-      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Kia/Sonet/7256/1678438878722/225_Aurora-Black-Pearl_242427.jpg?tr=w-290,h-205"
+      "imgSrc": "https://stimg.cardekho.com/images/car-images/large/Kia/Sonet/7256/1678438878722/225_Aurora-Black-Pearl_242427.jpg?tr=w-290,h-205"
     },
     {
       "name": "Mahindra Scorpio",
       "text": "Diesel, 7 seater",
       "rating": "4.2 stars",
-      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Mahindra/Scorpio-N/9174/1656388530514/227_GrandCanyon_571e14.jpg?tr=w-290,h-205"
+      "imgSrc": "https://stimg.cardekho.com/images/car-images/large/Mahindra/Scorpio-N/9174/1656388530514/227_GrandCanyon_571e14.jpg?tr=w-290,h-205"
     },
     {
       "name": "Hyundai Creta",
       "text": "Diesel, 5 seater",
       "rating": "4.75 stars",
-      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Hyundai/Creta/7695/1651738469758/224_Polar-white-with-phantom-black-roof_e5e9ec.jpg?tr=w-290,h-205"
-    },  {
+      "imgSrc": "https://stimg.cardekho.com/images/car-images/large/Hyundai/Creta/7695/1651738469758/224_Polar-white-with-phantom-black-roof_e5e9ec.jpg?tr=w-290,h-205"
+    },
+    {
       "name": "Tata Nexon",
       "text": "Diesel, 5 seater",
       "rating": "4.8 stars",
-      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Tata/Nexon/9977/1683096260828/226_foliage-green_657362.jpg?tr=w-290,h-205"
-    }, 
-     {
+      "imgSrc": "https://stimg.cardekho.com/images/car-images/large/Tata/Nexon/9977/1683096260828/226_foliage-green_657362.jpg?tr=w-290,h-205"
+    },
+    {
       "name": "Maruti FRONX",
       "text": "Petrol, 5 seater",
       "rating": "4.75 stars",
-      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Hyundai/Creta/7695/1651738469758/224_Polar-white-with-phantom-black-roof_e5e9ec.jpg?tr=w-290,h-205"
+      "imgSrc": "https://stimg.cardekho.com/images/car-images/large/Hyundai/Creta/7695/1651738469758/224_Polar-white-with-phantom-black-roof_e5e9ec.jpg?tr=w-290,h-205"
     },
-    
     {
       "name": "Maruti Jimny",
       "text": "Petrol, 4 seater",
       "rating": "4.2 stars",
-      "imgSrc":"https://stimg.cardekho.com/images/car-images/large/Maruti/Jimny/6182/1673858472875/221_Kinetic-Yellow-With-Bluish-Black-Roof_a9b04c.jpg?tr=w-290,h-205"
+      "imgSrc": "https://stimg.cardekho.com/images/car-images/large/Maruti/Jimny/6182/1673858472875/221_Kinetic-Yellow-With-Bluish-Black-Roof_a9b04c.jpg?tr=w-290,h-205"
     }
   ],
   "car": [
@@ -113,7 +113,26 @@
       "lname": "Basavanagudi",
       "ptime": "02:25",
       "rtime": "05:23"
+    },
+    {
+      "id": 3,
+      "name": "Kartik ",
+      "number": 7412589632,
+      "carname": "Hyundai Grand i10 NIOS",
+      "date": "2023-07-07",
+      "lname": "Bengaluru Urban",
+      "ptime": "00:31",
+      "rtime": "13:30"
+    },
+    {
+      "id": 4,
+      "name": "Sangeeta p",
+      "number": 8596231478,
+      "carname": "Renault Kwid",
+      "date": "2023-07-07",
+      "lname": "Koramangala",
+      "ptime": "02:37",
+      "rtime": "16:38"
     }
   ]
-
 }
