@@ -113,37 +113,6 @@
       "lname": "Basavanagudi",
       "ptime": "02:25",
       "rtime": "05:23"
-
-    },
-    {
-      "id": 3,
-      "name": "Kartik ",
-      "number": 7412589632,
-      "carname": "Hyundai Grand i10 NIOS",
-      "date": "2023-07-07",
-      "lname": "Bengaluru Urban",
-      "ptime": "00:31",
-      "rtime": "13:30"
-    },
-    {
-      "id": 4,
-      "name": "Sangeeta p",
-      "number": 8596231478,
-      "carname": "Renault Kwid",
-      "date": "2023-07-07",
-      "lname": "Koramangala",
-      "ptime": "02:37",
-      "rtime": "16:38"
-    },
-    {
-      "id": 5,
-      "name": "Swati L",
-      "number": 8523697412,
-      "carname": "Mahindra Scorpio",
-      "date": "2023-07-19",
-      "lname": "Jayanagar",
-      "ptime": "19:34",
-      "rtime": "22:37"
     }
   ]
 }
